@@ -1,0 +1,27 @@
+{
+  "name": "web-scraping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha --watch test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwoodwardgb/web-scraping.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dwoodwardgb/web-scraping/issues"
+  },
+  "homepage": "https://github.com/dwoodwardgb/web-scraping#readme",
+  "dependencies": {
+    "bl": "^1.1.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^2.11.1",
+    "mocha": "^2.5.3"
+  }
+}
