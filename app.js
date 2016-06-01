@@ -5,19 +5,19 @@ var https = require('https');
 
 var parsing = require('./parsing');
 
-var curPlace = 'http://www.reddit.com/';
-// http.get(curPlace, (res) => {
-//   res.pipe(bl((err, data) => {
-//     if (err) {
-//       console.error(err);
-//       return;
-//     }
-//
-//     var links = parsing.findLinks(data.toString());
-//     console.log(data);
-//     console.log(links);
-//   }));
-// });
+var curPlace = 'https://www.reddit.com/';
+https.get(curPlace, (res) => {
+	res.pipe(bl((err, data) => {
+		if (err) {
+			console.error(err);
+			return;
+		}
+		
+		var links = parsing.findLinks(data.toString());
+		console.log(data);
+		console.log(links);
+	}));
+});
 
 var options = {
   hostname: 'reddit.com',
